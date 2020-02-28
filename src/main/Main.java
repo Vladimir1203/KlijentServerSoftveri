@@ -1,6 +1,7 @@
 package main;
-import controller.Controller;
 import java.sql.SQLException;
+import javax.swing.JFrame;
+import ui.forms.Login;
 
 /**
  *
@@ -10,7 +11,8 @@ import java.sql.SQLException;
 public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        Controller.justConnectTest();
+        JFrame login = new Login();
+        login.setVisible(true);
     }
     
 }

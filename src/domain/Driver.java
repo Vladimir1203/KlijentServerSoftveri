@@ -7,13 +7,13 @@ package domain;
 
 public class Driver {
     private int IDCard;
-    private String ime;
-    private String prezime;
+    private String name;
+    private String surname;
 
-    public Driver(int IDCard, String ime, String prezime) {
+    public Driver(int IDCard, String name, String surname) {
         this.IDCard = IDCard;
-        this.ime = ime;
-        this.prezime = prezime;
+        this.name = name;
+        this.surname = surname;
     }
 
     public int getIDCard() {
@@ -24,21 +24,23 @@ public class Driver {
         this.IDCard = IDCard;
     }
 
-    public String getIme() {
-        return ime;
+    public String getName() {
+        return name;
     }
 
-    public void setIme(String ime) {
-        this.ime = ime;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getPrezime() {
-        return prezime;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setPrezime(String prezime) {
-        this.prezime = prezime;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
+
+    
     
     
 }
