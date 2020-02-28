@@ -31,6 +31,8 @@ public class MainForm extends javax.swing.JFrame {
 
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuDrive = new javax.swing.JMenu();
+        jMenuItemNewDrive = new javax.swing.JMenuItem();
+        jMenuItemAnalyseDrive = new javax.swing.JMenuItem();
         jMenuDriver = new javax.swing.JMenu();
         jMenuItemNewDriver = new javax.swing.JMenuItem();
         jMenuVehicle = new javax.swing.JMenu();
@@ -39,6 +41,23 @@ public class MainForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMenuDrive.setText("Drive");
+
+        jMenuItemNewDrive.setText("New");
+        jMenuItemNewDrive.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemNewDriveActionPerformed(evt);
+            }
+        });
+        jMenuDrive.add(jMenuItemNewDrive);
+
+        jMenuItemAnalyseDrive.setText("Analyse");
+        jMenuItemAnalyseDrive.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemAnalyseDriveActionPerformed(evt);
+            }
+        });
+        jMenuDrive.add(jMenuItemAnalyseDrive);
+
         jMenuBar1.add(jMenuDrive);
 
         jMenuDriver.setText("Driver");
@@ -91,6 +110,16 @@ public class MainForm extends javax.swing.JFrame {
         v.setVisible(true);
     }//GEN-LAST:event_jMenuItemNewVehicleActionPerformed
 
+    private void jMenuItemAnalyseDriveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemAnalyseDriveActionPerformed
+        JFrame da = new DriveAnalyse();
+        da.setVisible(true);
+    }//GEN-LAST:event_jMenuItemAnalyseDriveActionPerformed
+
+    private void jMenuItemNewDriveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemNewDriveActionPerformed
+        JFrame d = new Drive();
+        d.setVisible(true);
+    }//GEN-LAST:event_jMenuItemNewDriveActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -130,6 +159,8 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuDrive;
     private javax.swing.JMenu jMenuDriver;
+    private javax.swing.JMenuItem jMenuItemAnalyseDrive;
+    private javax.swing.JMenuItem jMenuItemNewDrive;
     private javax.swing.JMenuItem jMenuItemNewDriver;
     private javax.swing.JMenuItem jMenuItemNewVehicle;
     private javax.swing.JMenu jMenuVehicle;
