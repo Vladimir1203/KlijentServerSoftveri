@@ -18,8 +18,9 @@ public class DBBroker {
         Class.forName("com.mysql.cj.jdbc.Driver");
     }
     
-    public void openConnection() throws SQLException{
+    public Connection openConnection() throws SQLException{
         connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/transportapp", "root", "root");
+        return connection;
     }
     
     public void closeConnection() throws SQLException{

@@ -101,7 +101,7 @@ public class MainForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItemNewDriverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemNewDriverActionPerformed
-        JFrame d = new Driver();
+        JFrame d = new FDriver();
         d.setVisible(true);
     }//GEN-LAST:event_jMenuItemNewDriverActionPerformed
 

@@ -16,6 +16,9 @@ public class Driver {
         this.surname = surname;
     }
 
+    public Driver() {
+    }
+
     public int getIDCard() {
         return IDCard;
     }
