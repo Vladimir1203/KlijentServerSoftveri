@@ -5,11 +5,13 @@
  */
 package transfer;
 
+import java.io.Serializable;
+
 /**
  *
  * @author stackOverflow
  */
-public class RequestObject {
+public class RequestObject implements Serializable {
     private int operation;
     private Object data;
     
