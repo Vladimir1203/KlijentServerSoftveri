@@ -12,7 +12,7 @@ import java.util.List;
 public class Driver implements IGeneralEntity{
     private int IDCard;
     private String name;
-    private String surname;
+    private String surname; //ke
 
     public Driver() {
     }  
