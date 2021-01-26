@@ -10,7 +10,7 @@ package util;
  * @author stackOverflow
  */
 public class Operation {
-    public static final int LOGIN = 1;
+    public static final int LOGIN = 1; //u seminarskom slucaj koriscenja 1 : Prijavljivanje na sistem
     public static final int SAVE_DRIVER = 2;
     public static final int SAVE_VEHICLE = 3;
     public static final int SAVE_DRIVE = 4;
